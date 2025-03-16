@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <div class="profile-card-container">
+    <nav class="navbar">
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li class="list-items"><a href="../index.html">Profile Card</a></li>
+        <li class="list-items"><a href="../to-do_list/index.html">To-Do List</a></li>
+        <li class="active list-items"><a href="./index.html">Image Slider</a></li>
+      </ul>
+
+    </nav>
+    <div class="profile-card-wrapper">
+
+      <!-- Image Slider Section -->
+      <section id="image-slider" class="content-section" style="display: none;">
+        <div class="slider">
+          <img id="slider-img" src="../assets/images/1.jpg" alt="Slider Image">
+          <div class="slider-buttons">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  background: linear-gradient(270deg,#7637b9,#108ea8);
+  color: white;
+  position: relative;
+}
+
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 8.5rem;
+}
+
+/* Navigation Link Items */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #f39c12;
+}
+.nav-links .active a {
+  color: tomato;
+}
+/* Hamburger Icon Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    background: #333;
+    flex-direction: column;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    color: tomato;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

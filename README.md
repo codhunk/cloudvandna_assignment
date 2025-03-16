@@ -1,6 +1,5 @@
 Navbar section
 ![image](https://github.com/user-attachments/assets/880eb554-7fcd-4330-a54f-38f4eeb0536e)
-
 Profile Card Section
 ![image](https://github.com/user-attachments/assets/732fb084-16dc-458c-aba9-7c049cd0a324)
 
